@@ -26,7 +26,7 @@ public class SwagLabswebsitetesting {
 
         WebDriver driver = new ChromeDriver(options);
 
-     //   try {
+     //  try {
             // Open SauceDemo site
             driver.get("https://www.saucedemo.com/");
 
@@ -47,11 +47,11 @@ public class SwagLabswebsitetesting {
             }
 
         } catch (Exception e) {
-            
-    
-		driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            /*
+        	driver.get("https://www.saucedemo.com/");
+    		driver.manage().window().maximize();
+    		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		for(int i=1; i<=3;i++)
 		{
 			
@@ -117,10 +117,10 @@ public class SwagLabswebsitetesting {
 		WebElement menubar=driver.findElement(By.xpath("//button[@id='react-burger-menu-btn']"));
 		menubar.click();
 		
-		driver.findElement(By.xpath("//a[@id='logout_sidebar_link']")).click();
-			
-        }}
-		
+		//driver.findElement(By.xpath("//a[@id='logout_sidebar_link']")).click();
+			driver.quit();
+        }
+       }
 	
 	
 
